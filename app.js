@@ -1,42 +1,3 @@
-let numeros = [1,1,2,3,4,5,1,6,1 ];
-
-
-
-function search(arr, elemento) {
-   
-   let posicion = [];
-   let noExiste;
-
-   for (let i = 0; i < arr.length; i++) {
-
-
-      if (elemento == arr[i]) {
-
-         posicion.push(i);
-         
-      } else{
-             if ((i == arr.length-1) && (elemento != arr[i])) {
-               return -1;
-               break;
-      } 
-      continue;
-      }
-   }
-
-   return `este elemento se encuentra en la posicion: ${posicion}`;
-
-   };
-
-
-let test = search(numeros, 0);
-console.log(test);   
-
-
-
-
-
-/*
-
 let listaNumeroSorteado = [];
 let numeroMaximo = 10;
 
@@ -160,4 +121,3 @@ asignarTextoElemento("h1", "juego del numero secreto");
 asignarTextoElemento('p', "Numeros del 1 al 10 ¿Ok?");
 
 
-*/
